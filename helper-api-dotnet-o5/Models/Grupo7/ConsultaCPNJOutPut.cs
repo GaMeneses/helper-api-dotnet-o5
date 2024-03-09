@@ -1,8 +1,4 @@
-﻿using helper_api_dotnet_o5.Models.Paises;
-using Microsoft.AspNetCore.Routing;
-using Newtonsoft.Json;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Runtime.ConstrainedExecution;
+﻿using Newtonsoft.Json;
 
 public class ConsultaCPNJOutPut
 {
@@ -62,7 +58,7 @@ public class ConsultaCPNJOutPut
     public string Bairro { get; set; }
 
     [JsonProperty("capital_social")]
-    public int CapitalSocial { get; set; }
+    public long CapitalSocial { get; set; }
 
     [JsonProperty("cep")]
     public string Cep { get; set; }

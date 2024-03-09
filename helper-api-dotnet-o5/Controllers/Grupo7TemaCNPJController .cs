@@ -23,7 +23,7 @@ namespace helper_api_dotnet_o5.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status502BadGateway)]
-        public IActionResult Get2(string cnpj)
+        public IActionResult GetCNPJ(string cnpj)
         {
             var route = $"/{cnpj}";
             var api = new HelperAPI(ENDPOINT);
